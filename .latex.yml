@@ -1,8 +1,8 @@
 # You can set the LaTeX engine/compiler by including '% !TEX program = xelatex' in your .tex file.
 # You can also specify this option in a .latex.yml file in your project.
-# Valid values are 'pdflatex', 'lualatex', 'xelate'x and 'latex'.
+# Valid values are 'pdflatex', 'lualatex', 'xelatex' and 'latex'.
 compiler: xelatex
 
 # If your project contains multiple .tex files, we'll try to automaticlly detect which one to run LaTeX on.
 # However, if we get it wrong, you can specify it manually in .latex.yml
-root_file: main.tex
+#root_file: main.tex
