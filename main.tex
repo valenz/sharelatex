@@ -1,0 +1,49 @@
+% ***** PRAEAMBEL *****
+\documentclass[
+%	draft,				%% Entwurf
+%	final,				%% Final
+	11pt,				%% Schriftgröße
+	a4paper,			%% Papierformat
+	ngerman,			%% Sprache (können auch mehrere sein: Auswahl mit \selectlanguage{})
+%	bibliography=totoc,		%% Verweis auf Literaturverzeichnis im Inhaltsverzeichnis
+%	lists=totoc 			%% Verweis auf Abbildungs- und Tabellenverzeichnisse
+%	twoside,			%% Zweiseitiger Druck
+%	openright,			%% Kapitelanfänge auf rechter Seite
+]{scrreprt}                 		%% Dokumentklasse (http://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_documentclass)
+
+\include{praeamble}
+
+
+
+% ***** TITELSEITE *****
+%\include{title/title}
+
+% ***** DOKUMENT *****
+\begin{document}
+\changefont{phv}{m}{n}     	 	%% Schriftart aendern, siehe http://www.math.tu-dresden.de/~rudl/latex/fonts.pdf
+%\maketitle
+
+% ***** VERZEICHNISSE *****
+%\renewcommand{\nomname}{Abbreviations}
+%\printnomenclature          		%% Abbkuerzungsverzeichnis
+
+%\renewcommand{\contentsname}{Table of Contents}
+%\tableofcontents            		%% Inhaltsverzeichnis
+
+%\listoffigures              		%% Abbildungsverzeichnis
+%\listoftables              		%% Tabellenverzeichnis
+
+% ***** AUTOR *****
+%\include{zusatz/autor}
+
+% ***** ABSTRACT *****
+%\include{zusatz/abstract}
+
+% ***** INHALT *****
+\include{chapters/chapter01}
+
+% ***** LITERATURVERZEICHNIS *****
+\begin{footnotesize}
+%\printbibliography
+\end{footnotesize}
+\end{document}

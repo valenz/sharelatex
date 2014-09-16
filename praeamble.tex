@@ -1,0 +1,71 @@
+% ***** Kopf- und Fußzeilen *****
+%\usepackage[automark]{scrpage2}
+%\addtolength{\footnotesep}{2pt}		%% Abstand der Fussnote zur Trennlinie
+%\setcounter{secnumdepth}{3}			%% Nummerierung der Kapitel
+%\setcounter{figure}{4}		        	%% Bilder
+%\setcounter{tocdepth}{3}			%% Gliederungsebene fuer Inhaltsverzeichnis
+%\clearscrheadings                      	%% Entferne alle vorhandenen header
+%\pagestyle{scrheadings}                	%% Nutze scrheader
+%\addtokomafont{pagehead}{\normalsize\upshape}	%% nichtkursive Kopf-/Fusszeilen
+%\setheadsepline{.05pt}				%% Trennlinie oben
+%\setfootsepline{.05pt}				%% Trennlinie unten
+%\ihead{\leftmark}
+%\ofoot{\pagemark}
+%\addtolength{\headheight}{15mm}
+%\ohead[{\includegraphics[height=60pt]{MPIB2}}]{\includegraphics[height=60pt]{MPIB2}}
+
+% ***** Seitenlayout *****
+\usepackage[top=3.5cm,left=3.5cm,right=2.5cm,bottom=3.0cm]{geometry}
+\setcounter{secnumdepth}{5}         		%% Durchnummerierung
+\usepackage[onehalfspacing]{setspace}   	%% Anderthalbzeiliger Abstand
+\usepackage{mathptmx}               		%% De­fines Adobe Times Ro­man (or equiv­a­lent) as de­fault text font, and pro­vides maths sup­port us­ing glyphs from the Sym­bol, Chancery and Com­puter Modern fonts to­gether with let­ters
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+
+% ***** Wortabstaende *****
+%\frenchspacing					%% keine laengeren Leerzeichen nach Satzende/Abkuerzungen mit Punkt
+%\setlength{\parindent}{0pt}        		%% kein Einzug bei neuem Absatz
+%\setlength{\parskip}{1.5ex plus0.5ex minus 0.5ex}	%% Abstand zwischen zwei Absaetzen
+%\tolerance 1414                    		%% Influences the paragraph breaking routine itself
+%\hbadness 1414                     		%% Influences the user report (the messages you see on screen and in the log) about the actually chosen lines
+%\setlength{\emergencystretch}{1.5pt}
+%\hfuzz 0.3pt                       		%% Parameter that allows hbox's to be overfull by [length] before an overfull error occurs
+%\widowpenalty=10000                		%% Penalty for a broken page, with a single line of a paragraph (called "widow") remaining on the top of the succeeding page
+%\vfuzz \hfuzz                      		%% Show hfuzz
+%\raggedbottom                      		%% Makes all pages the height of the text on that page. No extra vertical space is added
+%\brokenpenalty=10000               		%% Penalty for a page break, where the last line of the previous page contains a hyphenation
+
+% ***** Packages *****
+\usepackage{scrhack}				%% Hacks, um Pakete mit KOMA-Klassen kompatibel zu machen
+%\usepackage{graphicx}				%% Grafiken
+\usepackage{multicol}				%% Mehrspaltig
+\usepackage{booktabs}				%% Qualitativ hochwertige horizontale Linien in Tabellen
+%\usepackage{url}				%% URLs einbinden
+%\usepackage{textcomp}				%% Verschiedene Symbole und Sonderzeichen
+\usepackage{caption}[2008/08/24]		%% Unterschriften für Bilder, Tabellen, etc.
+\usepackage{babel}				%% Paket für Silbentrennung etc.
+\usepackage[T1]{fontenc}            		%% Schriftkodierung
+\usepackage[utf8]{inputenc}			%% Eingabecodierung
+%\usepackage{float}                  		%% Im­proves the in­ter­face for defin­ing float­ing ob­jects such as fig­ures and ta­bles
+%    \restylefloat{figure}           		%% Restyle Figure
+\usepackage{lmodern}				%% Schriftart
+%\usepackage{wrapfig}                		%% Allows in-line images such as the example fish picture
+%\usepackage{listings}				%% Erlaubt Syntax-Korrektes Code-Einbinden
+\usepackage{color}                  		%% Farben freischalten
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}		%% Used for tables
+%\graphicspath{{pictures/}}          		%% Specifies the directory where pictures are stored
+\renewcommand*\familydefault{\sfdefault}	%% Umschaltung auf Sans Serif
+\usepackage[pdfborder={0 0 0}, colorlinks=false]{hyperref}	%% Klickbare Verweise
+%\usepackage{nomencl}                		%% Abbkuerzungsverzeichnis
+%\makenomenclature                   		%% Abbkuerzungsverzeichnis aufbauen
+
+% ***** Bibliographie-Setup *****
+%\usepackage[style=footnote-dw, backend=bibtex8]{biblatex} %% Geisteswissenschaften, speziell für Fußnoten
+%\usepackage[style=authoryear-icomp, backend=bibtex8]{biblatex} %% Geisteswissenschaften, Autor-Jahr
+%\usepackage[style=alphabetic-verb, backend=bibtex8]{biblatex} %% Naturwissenschaften
+%\usepackage[babel,german=quotes]{csquotes}
+%\bibliography{bibliography/literatur.bib}
+
+% ***** Funktionen *****
+\newcommand{\changefont}[3]{
+    \fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
